@@ -85,14 +85,43 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
-  margin-left: 0;
-  padding-left: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   color: #333;
 }
 
-.participants-list li {
-  margin-bottom: 4px;
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.participant-delete:hover,
+.participant-delete:focus {
+  background-color: rgba(198, 40, 40, 0.1);
+  transform: scale(1.05);
 }
 
 .activity-card p {
